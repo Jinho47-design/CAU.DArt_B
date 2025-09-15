@@ -91,6 +91,26 @@ WHERE
 
 - 데이터를 활용하고 싶은 `목적`이 있어야 어떤 칼럼을 선택할지 알 수 있게 됨
 
+![
+](<Images_2/스크린샷 2025-09-15 132255.png>)
+
+## 2-4. SELECT 연습문제
+
+### 1번
+![alt text](<Images_2/스크린샷 2025-09-15 210556.png>)
+
+### 2번
+![alt text](<Images_2/스크린샷 2025-09-15 210753.png>)
+
+### 3번
+![alt text](<Images_2/스크린샷 2025-09-15 210911.png>)
+
+### 4번
+![alt text](<Images_2/스크린샷 2025-09-15 211326.png>)
+
+### 5번
+![alt text](<Images_2/스크린샷 2025-09-15 211935.png>)
+
 ## 2-5. 집계 (Group By / HAVING / SUM,COUNT)
 
 ~~~
@@ -104,7 +124,7 @@ WHERE
 
 **집계하다 : 모아서(그룹화) 계산하다**
 
-쿼리 : GROUP BY
+쿼리 : `GROUP BY`
 
 -> 특정 컬럼을 기준으로 모으면서 다른 컬럼에서 집계 가능
 
@@ -114,31 +134,40 @@ WHERE
 
 **< 고유값을 알고 싶은 경우(중복 X) >**
 
-DISTINCT : 별개의
-DISTINCT => 사용 : count(DISTINCT 컬럼)
-GROUP BY 
+- GROUP BY 
 
-실무에서 데이터 분석 그룹화하는 경우
+- `DISTINCT` : 별개의
+
+    - 사용 : count(DISTINCT 컬럼)
+
+**실무에서 데이터 분석 그룹화하는 경우**
 - 일자별 집계
 - 연령대별 집계
 - 특정 타입별 집계
 - 앱 화면별 집계
 
-조건 - WHERE, HAVING 차이점
+### 조건 - WHERE, HAVING 차이점
 
-WHERE : Table에 바로 조건을 설정하고 싶은 경우 사용
-HAVING : GROUP BY 한 후 조건을 설정하고 싶은 경우 사용 
+> WHERE : Table에 바로 조건을 설정하고 싶은 경우 사용
 
-* 서브쿼리 : 쿼리에 다른 쿼리가 들어간다.
-서브 쿼리를 작성(like 테이블)하고 서브 쿼리 바깥에서 WHERE 조건 설정 = 서브 쿼리에서 HAVING으로 하는 것
+> HAVING : GROUP BY 한 후 조건을 설정하고 싶은 경우 사용 
 
-정렬 : ORDER BY <컬럼> <순서>
+* 서브쿼리 : 쿼리에 다른 쿼리가 들어감
+
+    서브 쿼리를 작성(like 테이블)하고 서브 쿼리 바깥에서 WHERE 조건 설정 = 서브 쿼리에서 HAVING으로 하는 것
+
+정렬 : `ORDER BY` <컬럼> <순서>
+
 - 내림차순 : DESC
 - 오름차순 : OSC(Default)
 
 쿼리에서 맨 마지막에 위치
-ORDER BY
-LIMIT : 쿼리문의 결과 ROW 수(출력 개수)를 제한하고 싶은 경우
+
+- ORDER BY
+
+- LIMIT
+    
+    : 쿼리문의 결과 ROW 수(출력 개수)를 제한하고 싶은 경우
 
 # 2️⃣ 학습 인증란
 
