@@ -178,8 +178,6 @@ WHERE
 ### 연습문제 3번
 ![alt text](<Images_2/스크린샷 2025-09-15 222140.png>)
 
-### 연습문제 4번
-
 # 2️⃣ 학습 인증란
 
 ![alt text](<Images_2/스크린샷 2025-09-15 222335.png>)
@@ -206,7 +204,14 @@ FROM pokemon;
 
 
 ~~~
-여기에 답을 작성해주세요!
+# 승화의 올바른 SQL Query문 
+SELECT name AS 포켓몬 이름, ID
+FROM pokemon
+WHERE type = 'Electric';
+
+1. FROM과 WHERE절의 순서 오류
+2. AS 뒤에 '' 
+3. ;은 맨 마지막에 위치해야함
 ~~~
 
 
@@ -225,7 +230,13 @@ GROUP BY type;
 
 
 ~~~
-여기에 답을 작성해주세요.
+SELECT type, AVG(attack) AS avg_attack
+FROM pokemon
+GROUP BY type
+HAVING AVG(attack) >= 60;
+
+WHERE -> HAVING
+HAVING이 오면서 순서 변경(GROUP BY 뒤에 위치)
 ~~~
 
 
