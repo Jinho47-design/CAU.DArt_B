@@ -265,6 +265,7 @@ SAS 21위
     -> DW의 시스템 부하 ↓
 
 ![alt text](<Images_2/데이터 처리 프로세스.png>)
+
 **ETL** 
 : Extract + Transform + Load
 
