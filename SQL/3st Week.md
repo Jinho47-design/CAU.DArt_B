@@ -332,6 +332,7 @@ FROM
 
 WHERE
 
+생산성 도구 사용 -> 사용이 안됨
 <br>
 <br>
 
@@ -341,7 +342,7 @@ WHERE
 
 <!-- 이 글을 지우고, 여기에 학습한 것을 인증해주세요.-->
 
-
+![alt text](Images_3/학습현황.png)
 
 <br><br>
 
@@ -376,7 +377,9 @@ ORDER BY (ㄱ) (ㄷ);
 
 
 ~~~
-여기에 답을 작성해주세요!
+(ㄱ) : COUNT(id) AS cnt
+(ㄴ) : GROUP BY
+(ㄷ) : cnt DESC
 ~~~
 
 
