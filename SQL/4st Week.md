@@ -277,7 +277,9 @@ SELECT
 >
 > :  https://school.programmers.co.kr/learn/courses/30/lessons/131535#
 
-![alt text](Images_4/문제풀이.png)
+![alt text](Images_4/문제풀이2.png)
+
+![alt text](image.png)
 
 ![alt text](Images_4/정답.png)
 
@@ -307,7 +309,24 @@ WHERE AGE BETWEEN 20 AND 29
 
 
 ~~~
-여기에 답을 작성해주세요!
+첫 번째 오류 : COUNT()를 사용할 때, 함수 안에 들어가는 인수의 개수가 잘못되었다.
+
+두 번째 오류 : 전체 그룹을 요약하는 값(집계 함수)과 개별 항목(일반 컬럼)을 한 번에 보여달라고 요구해서 생기는 충돌
+
+SELECT AGE, COUNT(*)
+FROM USER_INFO
+WHERE AGE BETWEEN 20 AND 29
+  AND JOINED BETWEEN '2021-01-01' AND '2021-12-31'
+GROUP BY AGE
+
+하지만 문제에서 요구하는 것은 2021년에 가입한 회원 중 나이가 20세 이상 29세 이하인 회원이 총 몇 명인지 구하는 것이기 때문에 
+
+SELECT COUNT(USER_ID) AS USERS
+FROM USER_INFO
+WHERE AGE BETWEEN 20 AND 29
+  AND JOINED BETWEEN '2021-01-01' AND '2021-12-31'
+
+이렇게 작성해야 한다.
 ~~~
 
 
