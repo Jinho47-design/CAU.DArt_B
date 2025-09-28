@@ -329,6 +329,7 @@ WHERE AGE BETWEEN 20 AND 29
 이렇게 작성해야 한다.
 ~~~
 
+![alt text](image-1.png)
 
 
 ### 🎉 수고하셨습니다.
