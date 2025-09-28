@@ -277,9 +277,9 @@ SELECT
 >
 > :  https://school.programmers.co.kr/learn/courses/30/lessons/131535#
 
-![alt text](Images_4/문제풀이2.png)
+![alt text](Images_4/문제풀이1.png)
 
-![alt text](image.png)
+![alt text](Images_4/문제풀이2.png)
 
 ![alt text](Images_4/정답.png)
 
@@ -329,7 +329,7 @@ WHERE AGE BETWEEN 20 AND 29
 이렇게 작성해야 한다.
 ~~~
 
-![alt text](image-1.png)
+![alt text](Images_4/수강.png)
 
 
 ### 🎉 수고하셨습니다.
