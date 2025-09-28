@@ -379,7 +379,7 @@ ORDER BY (ㄱ) (ㄷ);
 ~~~
 (ㄱ) : COUNT(id) AS cnt
 (ㄴ) : GROUP BY
-(ㄷ) : cnt DESC
+(ㄷ) : DESC
 ~~~
 
 
