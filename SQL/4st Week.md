@@ -277,11 +277,9 @@ SELECT
 >
 > :  https://school.programmers.co.kr/learn/courses/30/lessons/131535#
 
-<!-- 문제를 풀기 위하여 로그인이  필요합니다. -->
+![alt text](Images_4/문제풀이.png)
 
-<!-- 정답을 맞추게 되면, 정답입니다. 라는 칸이 생성되는데 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. --> 
-
-
+![alt text](Images_4/정답.png)
 
 ## 문제 1
 
