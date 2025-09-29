@@ -151,7 +151,7 @@
 > 공분산을 변수 각각의 표준편차 값으로 나누는 정규화를 하여 상관성 비교
 - 값의 범위: -1 ~ +1
 
-![alt text](image-4.png)
+![alt text](<Images_3/피어슨 상관계수.png>)
 
 - 상관분석 : 두 변수의 선형관계만 측정 가능
 
@@ -196,7 +196,7 @@
 
 ![alt text](Images_3/distplot().png)
 
-![alt text](image.png)
+![alt text](<Images_3/violinplot(), stripplot().png>)
 
 ![alt text](<Images_3/히트맵 차트1.png>)
 
@@ -208,7 +208,7 @@
 
 ![alt text](<Images_3/방사형 차트1.png>)
 
-![alt text](image-3.png)
+![alt text](<Images_3/방사형 차트2.png>)
 
 ![alt text](Images_3/이동평균.png)
 
