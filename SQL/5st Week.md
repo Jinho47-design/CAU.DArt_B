@@ -137,7 +137,24 @@ SQL에서 날짜와 시간을 비교할 때는 CURRENT_DATE() 대신 CURRENT_TIM
 
 <!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
 
+### 조건문이란?
+- 만약 특정 조건이 충족되면, 어떤 행동을 해라
 
+### 사용하는 방법
+1) CASE WHEN
+2) IF
+
+### 사용되는 이유
+- 특정 카테고리를 하나로 합치는 전처리가 필요
+
+**1) CASE WHEN**
+- 여러 조건이 있을 경우 유용
+- 순서 중요
+	조건1, 조건2에 둘 다 해당하면 앞선 순서를 따름(100>50)
+	특히 문자열 함수에서 이슈가 자주 발생
+
+**2) IF**
+- 단일 조건일 경우 유용
 
  # 4-5. 시간 데이터 연습문제 & 4-7. 조건문 연습 문제
 
@@ -161,7 +178,7 @@ catch_datetime : UTC. TIMESTAMP 타입 0
 
 => 확인 필요!
 
-**연습문제 1번**
+**4-5 연습문제 1번**
 
 Q. 트레이너가 포켓몬을 포획한 날짜(catch_date)를 기준으로, 2023년 1월에 포획한 포켓몬의 수를 계산해주세요. 
 
@@ -181,6 +198,10 @@ WHERE
 - **틀린 부분** : catch_datetime은 TIMESTAMP로 저장되어 있으므로, DATETIME으로 변경해야 한다. 
 
 - **새롭게 알게 된 부분** : 컬럼을 그대로 믿으면 안된다는 점을 알게 되었습니다.
+
+**4-5 연습문제 2번**
+
+ Q. 배틀이 일어난 시간(battle_datetime)을 기준으로, 오전 6시에서 오후 6시 사이에 일어난 배틀의 수를 계산해주세요. 
 
 winner_id : null값 존재
 * null : 무승부
@@ -202,10 +223,7 @@ FROM
 
 	basic.battle
 
-**연습문제 2번**
-
- Q. 배틀이 일어난 시간(battle_datetime)을 기준으로, 오전 6시에서 오후 6시 사이에 일어난 배틀의 수를 계산해주세요. 
-
+### 문제 풀이
 SELECT
 	
     COUNT(id) AS battle_cnt
@@ -222,7 +240,33 @@ WHERE
 - **새롭게 알게 된 부분** : EXTRACT 부분이 겹치기 때문에 BETWEEN 사용 가능!
 -> BETWEEN a and b : a와 b사이에 있는 것을 반환
 
+**4-7 연습문제 1번**
 
+Q. 포켓몬의 'Speed'가 70이상이면 '빠름', 그렇지 않으면 '느림'으로 표시하는 새로운 컬럼 'Speed_Category'를 만들어주세요
+
+SELECT
+	
+	IF(speed >= 70, '빠름', '느림') As Speed_Category
+FROM 
+	
+	basic.pokemon
+
+**4-7 연습문제 2번**
+
+Q. 포켓몬의 'type1'에 따라 'Water', 'Fire', 'Electric' 타입은 각각 '물', '불', '전기'로, 그외 타입은 '기타'로 분류하는 새로운 컬럼 'type_Korean'을 만들어 주세요
+
+SELECT
+	
+	CASE
+		WHEN type1 = 'Water' THEN '물'
+		WHEN type1 = 'Fire' THEN '불'
+		WHEN type1 = 'Electric' THEN '전기'
+		ELSE '기타'
+	END AS type1_Korean
+
+FROM 
+	
+	basic.pokemon
 
 <br>
 
@@ -257,7 +301,13 @@ WHERE
 <!-- 틀린쿼리에 대한 오류의 원인도 같이 작성해주세요. 문제에서 제공된 login_data 컬럼은 DATE type의 데이터를 가지고 있다고 가정하시면 됩니다. -->
 
 ~~~
-여기에 답을 작성해주세요!
+틀린 쿼리 : 3번 쿼리 
+login_date = '2021'는 문자열 '2021'이다. 이를 날짜 타입과 직접 비교하면 오류가 발생한다. 
+
+원인 : 데이터베이스마다 자동 형 변환이 다르게 이루어지기 때문이다.
+
+틀린 쿼리 : 4번 쿼리 
+BETWEEN '2021-01-01' AND '2021-12-31'은 login_date가 TIMESTAMP형이라면 12월 31일 자정 이후는 포함되지 않을 수 있다. 
 ~~~
 
 
