@@ -338,7 +338,9 @@ FROM pokemon;
 <!-- 근거와 함께 답을 작성해주세요 -->
 
 ~~~
-여기에 답을 작성해주세요!
+정답 : Pikachu와 Bulbasaur 
+
+이유 : 'Fire'나 'Water'가 아닌 'Electric'과 'Grass'가 ELSE 조건에 걸리기 때문이다.
 ~~~
 
 ![alt text](Images_5/수강.png)
