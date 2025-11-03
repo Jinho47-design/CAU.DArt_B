@@ -148,6 +148,80 @@ SQL에서 날짜와 시간을 비교할 때는 CURRENT_DATE() 대신 CURRENT_TIM
 
 <!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
 
+catch_date : DATE 타입
+
+catch_datetime : UTC. TIMESTAMP 타입 0
+
+=> 컬럼의 이름은 datetime인데 TIMESTAMP 타입으로 저장되어 있다!
+
+원래 datetime : UTC 표현 X -> T 표현 O
+
+(+) catch_date와 catch_datetime을 비교해 본 결과 : UTC는 +9시간을 해야하는데 날짜가 다른 문제 발생
+-> catch_date가 KR 기준? / UTC 기준? 
+
+=> 확인 필요!
+
+**연습문제 1번**
+
+Q. 트레이너가 포켓몬을 포획한 날짜(catch_date)를 기준으로, 2023년 1월에 포획한 포켓몬의 수를 계산해주세요. 
+
+SELECT
+	
+    COUNT(id) AS cnt
+
+FROM 
+
+    basic.trainer_pokemon
+
+WHERE
+
+	EXTRACT(YEAR FROM DATETIME(catch_datetime, "Asia/Seoul")) = 2023 
+	AND EXTRACT(MONTH FROM DATETIME(catch_datetime, "Asia/Seoul")) = 1
+
+- **틀린 부분** : catch_datetime은 TIMESTAMP로 저장되어 있으므로, DATETIME으로 변경해야 한다. 
+
+- **새롭게 알게 된 부분** : 컬럼을 그대로 믿으면 안된다는 점을 알게 되었습니다.
+
+winner_id : null값 존재
+* null : 무승부
+
+    battle_date : battle_datetime 기반으로 만들어진 date
+    battle_datetime : T로 표시 O (datetime TRUE)
+
+-> battle_datetime이랑 DATETIME(battle_timestamp, "Asia/Seoul") 같은지 확인 필요!
+
+### 방법
+
+SELECT
+	
+	COUNTIF(battle_datetime = DATETIME(battle_timestamp, "Asia/Seoul")) AS battle_datetime_same_battle_timestamp_kr,
+	
+	COUNTIF(battle_datetime != DATETIME(battle_timestamp, "Asia/Seoul")) AS battle_datetime_not_same_battle_timestamp_kr
+
+FROM
+
+	basic.battle
+
+**연습문제 2번**
+
+ Q. 배틀이 일어난 시간(battle_datetime)을 기준으로, 오전 6시에서 오후 6시 사이에 일어난 배틀의 수를 계산해주세요. 
+
+SELECT
+	
+    COUNT(id) AS battle_cnt
+
+FROM 
+
+    basic.battle
+
+WHERE
+
+	EXTRACT(HOUR FROM battle_datetime) >= 6
+	AND EXTRACT(HOUR FROM battle_datetime) <= 18
+
+- **새롭게 알게 된 부분** : EXTRACT 부분이 겹치기 때문에 BETWEEN 사용 가능!
+-> BETWEEN a and b : a와 b사이에 있는 것을 반환
+
 
 
 <br>
