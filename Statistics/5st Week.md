@@ -142,9 +142,26 @@ EDA의 주요 목적
 
 <!-- 이 주석을 지우고 “실습 결과 화면(캡처)을 이곳에 첨부해주세요.-->
 
-~~~
+### 히스토그램
+![alt text](Images_4/히스토그램.png)
 
-~~~
+### 파이차트
+![alt text](Images_4/파이차트.png)
+
+### 도넛차트
+![alt text](Images_4/도넛차트.png)
+
+### 와플차트
+![alt text](Images_4/와플차트.png)
+
+### 산점도
+![alt text](Images_4/산점도.png)
+
+### 버블차트
+![alt text](Images_4/버블차트.png)
+
+### 박스플롯
+![alt text](Images_4/박스플롯.png)
 
 
 
