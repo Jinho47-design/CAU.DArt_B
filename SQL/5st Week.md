@@ -291,7 +291,7 @@ FROM pokemon;
 여기에 답을 작성해주세요!
 ~~~
 
-
+![alt text](Images_5/수강.png)
 
 <br>
 
