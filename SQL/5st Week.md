@@ -60,6 +60,72 @@
 
 <!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
 
+📌 DATETIME 함수
+
+- CURRENT_DATETIME : 현재 DATETIME 출력	
+~~~
+주로 날짜(YYYY-MM-DD)와 시간(HH:MI:SS) 정보가 합쳐진 형태의 데이터를 다루는 데 사용되며, DATETIME은 SQL에서 날짜와 시간을 동시에 저장하는 데이터 타입 이름이기도 합니다.
+~~~
+---
+**CURRENT_DATE() 함수와 시간대(Time Zone) 때문에 발생하는 혼란**
+
+**'2025-11-04 05:00:00'**에 CURRENT_DATE()를 실행하면, 함수는 로컬 시계를 보고 **'2025-11-04'**를 반환합니다.
+
+하지만 이 시점의 UTC 시간은 9시간 느리기 때문에, 아직 '2025-11-03'입니다. (05:00:00 - 9시간 = 전날 20:00:00)
+
+< 정확한 처리를 위한 팁 >
+
+SQL에서 날짜와 시간을 비교할 때는 CURRENT_DATE() 대신 CURRENT_TIMESTAMP() 또는 NOW() 함수를 사용하는 것이 더 안전합니다. 
+
+이 함수들은 시간대 정보가 포함된 정확한 시점을 반환하기 때문에, AT TIME ZONE 함수 등을 사용하여 UTC 기준으로 통일된 날짜를 추출할 수 있습니다.
+
+---
+
+- EXTRACT : 특정 부분만 추출하고 싶은 경우
+-> 사용 : 일자별 주문, 월별 주문
+
+	- 요일을 추출 : DAYOFWEEK
+		EXTRACT(DAYOFWEEK FROM datetime_col)
+		1 : 일요일 / 2 : 월요일 / 7 : 토요일
+
+- DATETIME_TRUNC : DATE & HOUR만 남기고 싶은 경우 => 시간 자르기
+	주로 시간(HOUR)을 자를 때 사용!
+
+- PARSE_DATETIME : 문자열 데이터 -> DATETIME 타입 데이터
+*PARSING = 문자열을 분석해서 알맞은 것으로 배치한다* 
+	- %를 사용 EX. %Y = 년도
+
+- FORMAT_DATETIME : DATETIME 타입 데이터 -> 문자열 데이터
+
+- LAST_DAY : 마지막 날을 알고 싶은 경우 
+	자동으로 월의 마지막 값을 계산해서 특정 연산을 할 경우
+
+	LAST_DAY에서 WEEK은 기본값 : SUNDAY -> 토요일이 반환
+
+- DATETIME_DIFF : 두 DATETIME의 차이를 알고 싶은 경우
+
+## < 정리 >
+
+날짜 및 시간 데이터 타입
+
+- DATE 
+- DATETIME : DATE + TIME. 타임존 정보 X
+- TIMESTAMP : 특정 시점에 도장 찍은 값. 타임존 정보 O
+- UTC : 국제적인 표준 시간. 한국은 UTC+9
+- Millisecond : 1/1000초
+- Microsecond : 1/1000ms
+
+시간 데이터 타입 변환하기
+
+- TIMESTAMP_MILLIS : MILLIS -> TIMESTAMP
+- TIMESTAMP_MICROS : MICROS -> TIMESTAMP
+- 문자열 -> DATETIME : PARSE_DATETIME
+- DATETIME -> 문자열 : FORMAT_DATETIME
+
+- 현재 DATETIME : CURRENT_DATETIME
+- DATETIME의 특정 부분 추출 : EXTRACT
+- DATETIME 특정 부분 자르기 : DATETIME_TRUNC
+- DATETIME 차이 구하기 : DATETIME_DIFF
 
 
 # 4-6. 조건문(CASE WHEN, IF)
