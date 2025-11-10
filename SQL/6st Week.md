@@ -117,10 +117,26 @@ JOIN : 서로 다른 데이터 테이블(다량의 자료)을 연결하는 과�
 * JOIN 방법들의 종류를 설명할 수 있다. 
 * 각 JOIN 방법들의 차이점에 대해서 설명할 수 있다. 
 ~~~
+### (INNER) JOIN
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+두 테이블의 공통 요소만 연결
 
+### LEFT/RIGHT (OUTER) JOIN
 
+왼쪽/오른쪽 테이블 기준으로 연결
+
+### FULL (OUTER) JOIN
+
+양쪽 기준으로 연결
+
+### CROSS JOIN
+
+두 테이블의 각각의 요소를 곱하기
+
+![alt text](<Images_6/JOIN 방법.png>)
+
+**JOIN 집합 관점**
+![alt text](<Images_6/JOIN 집합관점.png>)
 
 ## 5-4. JOIN 쿼리 작성하기 
 
