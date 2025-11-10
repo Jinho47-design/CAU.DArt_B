@@ -138,6 +138,11 @@ JOIN : 서로 다른 데이터 테이블(다량의 자료)을 연결하는 과�
 **JOIN 집합 관점**
 ![alt text](<Images_6/JOIN 집합관점.png>)
 
+**JOIN을 처음 공부할 때 헷갈렸던 부분**
+
+1) 여러 Table을 연결할 수 있을까?
+	- JOIN의 개수는 3~5개가 적당
+
 ## 5-4. JOIN 쿼리 작성하기 
 
 ~~~
@@ -146,9 +151,65 @@ JOIN : 서로 다른 데이터 테이블(다량의 자료)을 연결하는 과�
 * JOIN 을 활용한 쿼리를 작성할 수 있다. 
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+### JOIN 쿼리 작성 흐름
+
+1. 테이블 흐름 
+    - 테이블에 저장된 데이터, 컬럼 확인
+
+2. 기준 테이블 정의
+- 가장 많이 참고할 기준 테이블 정의
+	- Tip) Row수가 적으면서 내가 원하는 것을 다 포함
+
+3. JOIN Key 찾기
+    - 여러 Table과 연결할 Key(ON) 정리
+
+4. 결과 예상하기
+    - 결과 테이블을 예상해서 손, 엑셀로 작성 
+
+5. 쿼리 작성 / 검증
+    - 예상한 결과와 동일한 결과가 나오는지 확인
+
+### JOIN 문법
+
+FROM
+
+LEFT JOIN
+
+ON
+
+-> SELECT / FROM / (JOIN) / WHERE / GROUP BY / ORDER BY
+~~~
+- INNER JOIN, LEFT/RIGHT JOIN, FULL JOIN : ON 필수 작성
+- CROSS JOIN : ON 필수 X
+~~~
+[ 예시 ]
+
+FROM table1 AS A
+
+LEFT JOIN table2 AS B
+
+ON A.key = B.key
 
 
+**EXCEPT : 활용하면 _ 삭제 가능**
+
+### 학습목표2 : JOIN 을 활용한 쿼리를 작성할 수 있다. 
+
+SELECT
+	
+    tp.*,
+	t.* EXCEPT(id)
+
+FROM 
+
+	basic.trainer_pokemon AS tp
+LEFT JOIN 
+    
+    basic.trainer AS t
+
+ON 
+    
+    tp.trainer_id = t.id
 
 ## 5-6. JOIN 연습문제 1~5번 
 
@@ -157,7 +218,17 @@ JOIN : 서로 다른 데이터 테이블(다량의 자료)을 연결하는 과�
 * 연습문제(3문제 이상) 푼 것들 정리하기
 ~~~
 
-<!-- 새롭게 배운 내용을 자유롭게 정리해주세요.-->
+### 1. 트레이너가 보유한 포켓몬들은 얼마나 있는지 알 수 있는 쿼리를 작성해주세요.
+
+![alt text](Images_6/문제1.png)
+
+### 2. 트레이너가 보유한 포켓몬들은 얼마나 있는지 알 수 있는 쿼리를 작성해주세요.
+
+![alt text](Images_6/문제2.png)
+
+### 3. 트레이너의 고향(hometown)과 포켓몬을 포획한 위치(location)를 비교하여, 자신의 고향에서 포켓몬을 포획한 트레이너의 수를 계산해주세요. 
+### 참고 : status 상관없이 구해주세요
+
 
 
 
