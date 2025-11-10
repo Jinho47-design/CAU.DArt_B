@@ -142,7 +142,33 @@
 >
 > > **인증 예시 : 통계 프로그램 결과, 시각화 이미지 캡처 등**
 
-<!-- 이 주석을 지우고 “실습 결과 화면(캡처)을 이곳에 첨부해주세요.-->
+## 결측값 시각화
+![alt text](<Images_5/결측값 시각화(1).png>)
+![alt text](<Images_5/결측값 시각화(2).png>)
+
+## 박스플롯
+![alt text](<Images_5/BMI 박스플롯.png>)
+
+## 박스플롯 이상치 제거
+![alt text](<Images_5/박스플롯 이상치 제거.png>)
+
+## 분포 시각화
+![alt text](<Images_5/분포 시각화.png>)
+
+## bin 분포 시각화
+![alt text](<Images_5/bin_분포 시각화.png>)
+
+## bin3 분포 시각화
+![alt text](<Images_5/bin3 칼럼 분포 시각화.png>)
+
+## 표준화 스케일링
+![alt text](<Images_5/표준화 스케일링.png>)
+
+## 정규화 스케일링
+![alt text](<Images_5/정규화 스케일링.png>)
+
+## RobustScaler 스케일링
+![alt text](<Images_5/RobustScaler 스케일링.png>)
 
 ~~~
 인증 이미지가 없으면 과제 수행으로 인정되지 않습니다.
