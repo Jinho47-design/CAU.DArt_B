@@ -128,6 +128,7 @@ JOIN 에 대해서 그림으로 쉽게 이해할 수 있는 자료들도 있어�
 
 2. https://velog.io/@wijoonwu/JOIN
 
+![alt text](Images_6/수강.png)
 <br>
 
 ### 🎉 수고하셨습니다.
