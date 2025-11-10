@@ -245,12 +245,13 @@ https://school.programmers.co.kr/learn/courses/30/lessons/164673
 
 > 조건에 부합하는 중고거래 댓글 조회하기 (JOIN)
 
+![alt text](Images_6/정답(1).png)
 https://school.programmers.co.kr/learn/courses/30/lessons/144854
 
 > 조건에 맞는 도서와 저자 리스트 출력하기 (JOIN)
 
-<!-- 정답을 맞추게 되면, 정답입니다. 이 부분을 캡처해서 이 주석을 지우시고 첨부해주시면 됩니다. --> 
 
+![alt text](Images_6/정답(2).png)
 
 
 ---
