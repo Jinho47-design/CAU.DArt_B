@@ -206,7 +206,7 @@ Q. 여러분은 포켓몬 트레이너들의 배틀 성적을 분석하는 작�
 
 6) 맞다면 특정 유저 조건 제외
 
-
+![alt text](Images_7/수강.png)
 <br>
 
 <br>
@@ -229,7 +229,17 @@ https://school.programmers.co.kr/learn/courses/30/lessons/59043
 
 > 있었는데요 없었습니다.
 
+![alt text](Images_7/문제1.png)
 
+![alt text](Images_7/정답(1).png)
+
+![alt text](Images_7/문제2.png)
+
+![alt text](Images_7/정답(2).png)
+
+![alt text](Images_7/문제3.png)
+
+![alt text](Images_7/정답(3).png)
 
 ## LeetCode 문제
 
@@ -267,7 +277,21 @@ where u.region= 'Busan'			order by o.OrderID
 
 
 ~~~
-여기에 답을 작성해주세요.
+SELECT 
+    u.name AS user_name,
+    o.OrderID,
+    p.ProductName,
+    od.Quantity,
+    od.UnitPrice
+FROM Users AS u
+    JOIN Orders AS o
+        ON u.id = o.userId
+    JOIN OrderDetails AS od
+        ON o.OrderID = od.orderID
+    JOIN Products AS p
+        ON od.ProductID = p.ProductID
+WHERE u.region = 'Busan'
+ORDER BY o.OrderID
 ~~~
 
 
