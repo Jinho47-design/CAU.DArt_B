@@ -114,8 +114,51 @@
 >
 > > **인증 예시 : 통계 프로그램 결과, 시각화 이미지 캡처 등**
 
+**실습 11.5**
 
+![alt text](<Images_6/5. 실습.png>)
 
+![alt text](<Images_6/5.데이터 불러오기.png>)
+
+![alt text](<Images_6/5. 파생변수 생성.png>)
+
+**실습 11.6**
+
+![alt text](<Images_6/6. 데이터 불러오기.png>)
+
+![alt text](<Images_6/6. 각 시점 기준 칼럼.png>)
+
+![alt text](<Images_6/6. 특정 고객 지정.png>)
+
+![alt text](<Images_6/6. 파이팅.png>)
+
+**실습 11.7**
+
+![alt text](<Images_6/7. 데이터 불러오기.png>)
+
+![alt text](<Images_6/7. 가변수 범주 분포 시각화.png>)
+
+![alt text](<Images_6/7. 가변수 처리.png>)
+
+![alt text](<Images_6/7. 가변수 처리하기(2).png>)
+
+**실습 11.8**
+
+![alt text](<Images_6/8. gender 칼럼의 가변수.png>)
+
+![alt text](<Images_6/8. 학습셋과 테스트셋 분리.png>)
+
+![alt text](<Images_6/8. 컬럼 클래스 분포 시각화.png>)
+
+![alt text](<Images_6/8. 언더샘플링 적용 후 분포 시각화.png>)
+
+**실습 11.9**
+
+![alt text](<Images_6/9. 데이터 불러오기.png>)
+
+![alt text](<Images_6/9. 스타벅스.png>)
+
+![alt text](<Images_6/9. 유클리드 거리 측정.png>)
 ---
 
 # 3️⃣ 실습 과제 (마지막 과제)
