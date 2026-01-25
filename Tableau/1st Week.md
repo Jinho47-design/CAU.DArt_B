@@ -141,7 +141,7 @@ hyper : Tableau의 새로운 인메모리 데이터 엔진 기술
 ```
 right join
 ```
-
+![alt text](Images_1/조인.png)
 
 
 ## 6강. 데이터결합 혼합
