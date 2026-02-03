@@ -68,6 +68,9 @@
   - 예시: `{FIXED [지역]: SUM([매출])}`은 뷰에 어떤 차원이 있든 상관없이 지역별 매출 합계를 계산합니다. 
   - 차원을 입력하지 않으면 전체 데이터 기준으로 계산됩니다.
 
+![alt text](<Images_5/LOD FIXED(1).png>)
+![alt text](<Images_5/LOD FIXED(2).png>)
+
 ## 40. LOD EXCLUDE
 
 <!-- INCLUDE, EXCLUDE, FIXED 등 본 강의에서 알게 된 LOD 표현식에 대해 알게 된 점을 적고, 아래 두 질문에 답해보세요 :) -->
