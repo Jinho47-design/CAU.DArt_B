@@ -77,7 +77,7 @@
 
 > **🧞‍♀️ 깃허브 assignment 폴더의 DArt-B Sample Store.xls 파일을 다운받고 시트 중 '주문' 시트를 불러와주세요.**
 
-![alt text](image.png)
+![alt text](<Images_1/주문 시트.png>)
 
 
 ## 3강. 데이터연결과 데이터 유형
