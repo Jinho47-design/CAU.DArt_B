@@ -334,8 +334,21 @@ INSERT INTO orders VALUES
    - orders 테이블의 `order_date_str`을 DATE 형식으로 변환하여 조회하시오.
    (힌트: STR_TO_DATE 사용)
 
+    SELECT STR_TO_DATE(order_date_str, '%Y%m%d') AS order_date
+
+    FROM orders;
+
+    ![alt text](<Images_3/실습 문제_1.png>)
+
 2. **데이터 형식 변환**
    - orders 테이블의 `amount_str`을 숫자형으로 변환하여 조회하시오.
+
+    SELECT CAST(amount_str AS UNSIGNED) AS amount
+
+    FROM orders;
+
+    ![alt text](<Images_3/실습 문제_2.png>)
+
 
 3. **내부 조인 (INNER JOIN)**
    - customers와 orders를 customer_id 기준으로 내부 조인하여
