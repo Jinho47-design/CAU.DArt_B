@@ -355,7 +355,9 @@ INSERT INTO orders VALUES
      고객 이름(name)과 주문 번호(order_id)를 함께 조회하시오.
 
     SELECT c.name, o.order_id
+
     FROM customers c
+    
     INNER JOIN orders o ON c.customer_id = o.customer_id;
 
     ![alt text](<Images_3/실습 문제_3.png>)
