@@ -357,7 +357,7 @@ INSERT INTO orders VALUES
     SELECT c.name, o.order_id
 
     FROM customers c
-    
+
     INNER JOIN orders o ON c.customer_id = o.customer_id;
 
     ![alt text](<Images_3/실습 문제_3.png>)
@@ -367,7 +367,9 @@ INSERT INTO orders VALUES
      주문이 없는 고객도 함께 조회하시오.
 
     SELECT c.name, o.order_id
+    
     FROM customers c
+    
     LEFT JOIN orders o ON c.customer_id = o.customer_id;
 
     ![alt text](<Images_3/실습 문제_4.png>)
