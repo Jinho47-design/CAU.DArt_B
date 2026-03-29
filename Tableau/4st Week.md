@@ -325,7 +325,7 @@ Ex. 고객 이름을 성과 이름으로 분리하는 경우 split 함수를 사
 DATEDIFF('day', [주문 날짜], [배송 날짜])
 ~~~
 
-![alt text](https://raw.githubusercontent.com/DArt-B-Official/Tableau_Template/main/images/Week3-2.png)
+![alt text](https://raw.githubusercontent.com/DArt-B-Official/07_Tableau_Template/main/images/Week3-2.png)
 
 >  **그런데 위 그림처럼 '주문 날짜'와 '배송 날짜'를 함께 행에 올려 확인해보니, 주문날짜와 배송날짜의 차이가 '배송까지 걸린 일수'와 다릅니다. ID-2021-11126을 보니, 11월 26일 배송에 11월 30일 배송이면 4일 차이인데, 12일이 걸렸다고 하네요. 왜 이런 문제가 생긴걸까요?**
 
