@@ -49,7 +49,7 @@ https://www.youtube.com/watch?v=JrXWxku7ZIM&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 ![alt text](<Images_4/실습 과정1.png>)
 
-
+![alt text](<Images_4/실습 과정2.png>)
 
 ## 2. 제약조건으로 테이블을 견고하게 
 
@@ -199,6 +199,8 @@ USE week4_db;
 - grade는 INT이며 기본값(Default)을 1로 설정합니다.
 ```
 
+![alt text](<Images_4/실습 문제 1.png>)
+
 2. 다음 조건을 만족하는 orders 테이블을 생성하시오.
 ```
 - order_id는 INT이며 기본키(Primary Key)로 설정합니다.
@@ -207,11 +209,15 @@ USE week4_db;
 - order_date는 DATE 타입으로 설정합니다.
 ```
 
+![alt text](<Images_4/실습 문제 2.png>)
+
 3. 다음 조건을 만족하여 데이터를 삽입하시오.
 ```
 - users 테이블에 3명 이상의 데이터를 직접 INSERT 하시오.
 - orders 테이블에 3건 이상의 데이터를 직접 INSERT 하시오.
 ```
+
+![alt text](<Images_4/실습 문제 3.png>)
 
 4. users와 orders 테이블을 활용하여 다음 컬럼을 보여주는 뷰 user_order_view를 생성하시오.
 ```
@@ -219,6 +225,8 @@ USE week4_db;
 - name
 - amount
 ```
+
+
 
 5. 생성한 user_order_view를 조회하시오.
 
