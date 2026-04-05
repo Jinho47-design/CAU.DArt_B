@@ -226,7 +226,12 @@ INSERT INTO employees VALUES
 
 인덱스 생성 결과, EXPLAIN 실행 결과, 인덱스 삭제 결과가 모두 보이도록 캡처하여 제출하세요.
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+![alt text](<Images_5/실습 1.png>)
+
+![alt text](<Images_5/실습 2.png>)
+
+![alt text](<Images_5/실습 3.png>)
+
 
 ### 🎉 수고하셨습니다.
 
