@@ -163,8 +163,17 @@ MySQL에서 사용되는 인덱스는 크게 **클러스터형 인덱스**와 **
 
 <!-- 이번 챕터에서 제시된 실습을 흐름에 맞게 진행한 후, 실습 과정이 보일 수 있도록 인증 사진을 2장 이상 제출해 주세요. -->
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+![alt text](<Images_5/Member 1.png>)
 
+![alt text](<Images_5/Member 2.png>)
+
+![alt text](<Images_5/Member 3.png>)
+
+![alt text](<Images_5/Member 4.png>)
+
+![alt text](<Images_5/Result 1.png>)
+
+![alt text](<Images_5/Result 2.png>)
 
 ---
 
