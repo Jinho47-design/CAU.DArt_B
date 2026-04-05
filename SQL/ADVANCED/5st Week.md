@@ -232,6 +232,7 @@ INSERT INTO employees VALUES
 
 ![alt text](<Images_5/실습 3.png>)
 
+![alt text](<Images_5/실습 4.png>)
 
 ### 🎉 수고하셨습니다.
 
