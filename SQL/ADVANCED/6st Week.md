@@ -262,6 +262,8 @@ INSERT INTO accounts VALUES
 - transactions에 직접 INSERT 하시오.
 - accounts 잔액이 자동으로 증가하는지 확인하시오.
 
+![alt text](<Images_6/실습 4-1.png>)
 
+![alt text](<Images_6/실습 4-2.png>)
 
 ### 🎉 수고하셨습니다.
