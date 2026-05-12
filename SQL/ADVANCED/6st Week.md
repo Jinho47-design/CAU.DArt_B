@@ -88,8 +88,9 @@ https://www.youtube.com/watch?v=bggWVsBmKag&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 <!-- 이번 챕터에서는 확인문제를 실습 인증으로 대체하여 진행합니다. 제시된 실습을 흐름에 맞게 진행한 후, 실습 과정이 보일 수 있도록 인증 사진을 2장 이상 제출해 주세요. -->
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+![alt text](<Images_6/PROCEDURE 1.png>)
 
+![alt text](<Images_6/PROCEDURE 2.png>)
 
 ## 2. 스토어드 함수와 커서 
 
@@ -122,9 +123,9 @@ https://www.youtube.com/watch?v=bggWVsBmKag&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 <!-- 이번 챕터에서는 확인문제를 실습 인증으로 대체하여 진행합니다. 제시된 실습을 흐름에 맞게 진행한 후, 실습 과정이 보일 수 있도록 인증 사진을 2장 이상 제출해 주세요. -->
 
-![alt text](<Images_6/PROCEDURE 1.png>)
+![alt text](<Images_6/스토어드 함수와 커서 1.png>)
 
-![alt text](<Images_6/PROCEDURE 2.png>)
+![alt text](<Images_6/스토어드 함수와 커서 2.png>)
 
 ## 3. 자동 실행되는 트리거 
 
@@ -157,7 +158,7 @@ https://www.youtube.com/watch?v=bggWVsBmKag&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 <!-- 이번 챕터에서는 확인문제를 실습 인증으로 대체하여 진행합니다. 제시된 실습을 흐름에 맞게 진행한 후, 실습 과정이 보일 수 있도록 인증 사진을 2장 이상 제출해 주세요. -->
 
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
+
 
 
 ---
