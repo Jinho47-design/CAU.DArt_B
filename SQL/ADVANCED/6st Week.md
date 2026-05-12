@@ -158,8 +158,9 @@ https://www.youtube.com/watch?v=bggWVsBmKag&list=PLVsNizTWUw7GCfy5RH27cQL5MeKYnl
 
 <!-- 이번 챕터에서는 확인문제를 실습 인증으로 대체하여 진행합니다. 제시된 실습을 흐름에 맞게 진행한 후, 실습 과정이 보일 수 있도록 인증 사진을 2장 이상 제출해 주세요. -->
 
+![alt text](<Images_6/트리거 1.png>)
 
-
+![alt text](<Images_6/트리거 2.png>)
 
 ---
 
@@ -218,6 +219,8 @@ INSERT INTO accounts VALUES
 - 프로시저를 1회 이상 CALL 하시오.
 - 실행 후 `accounts` 테이블을 조회하여 잔액이 변경되었는지 확인하시오.
 
+![alt text](<Images_6/실습 1.png>)
+
 ---
 
 ### 2. 스토어드 함수
@@ -231,6 +234,8 @@ INSERT INTO accounts VALUES
 **추가 수행**
 - `accounts` 테이블을 조회하면서 `fn_is_vip(balance)` 결과를 함께 출력하시오.
 
+![alt text](<Images_6/실습 2.png>)
+
 ---
 
 ### 3. 커서(Cursor)
@@ -240,6 +245,13 @@ INSERT INTO accounts VALUES
 **추가 수행**
 - 프로시저를 CALL 하여 결과를 확인하시오.
 
+![alt text](<Images_6/실습 3-1.png>)
+
+![alt text](<Images_6/실습 3-2.png>)
+
+![alt text](<Images_6/실습 3-3.png>)
+
+![alt text](<Images_6/실습 3-4.png>)
 ---
 
 ### 4. 트리거(Trigger)
@@ -250,8 +262,6 @@ INSERT INTO accounts VALUES
 - transactions에 직접 INSERT 하시오.
 - accounts 잔액이 자동으로 증가하는지 확인하시오.
 
-
-<!-- 이 부분을 지우고 인증사진을 제출해주세요.-->
 
 
 ### 🎉 수고하셨습니다.
